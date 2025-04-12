@@ -1,0 +1,137 @@
+/* Logo Styling */
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 0;
+  margin-left: 2px;
+}
+
+.myimg {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+/* Navbar Styling */
+.navbar-brand:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  transition: text-shadow 0.3s ease;
+}
+
+/* Button Styling */
+.btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #0056b3 !important;
+}
+
+#startSpeechRecognition {
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+#startSpeechRecognition:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styling */
+.modal-header {
+  background-color: #020606;
+  color: white;
+}
+
+.modal-body ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Toggle Button Styling */
+.toggle-button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.toggle-button:hover {
+  transform: scale(1.1);
+  background-color: #ffc107 !important;
+}
+
+/* Input Field Styling */
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+.btn-close {
+  outline: none;
+  border: none;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0056b3;
+}
+
+/* Card Shadow Styling */
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .myimg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  #startSpeechRecognition {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
