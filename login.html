@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Medical Recommendation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://st2.depositphotos.com/36924814/46071/i/450/depositphotos_460713580-stock-photo-medical-health-blue-cross-neon.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .login-box {
+      position: relative;
+      width: 420px;
+      padding: 60px 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      color: #fff;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .login-box::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 28px;
+      padding: 2px;
+      background: linear-gradient(45deg, #0fffc1, #7eebff, #00b3ff);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 26px;
+      color: #ffffff;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 14px 16px;
+      margin: 12px 0;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    .login-box input::placeholder {
+      color: #ccc;
+    }
+
+    .login-box input:focus {
+      border-color: #00fff7;
+      box-shadow: 0 0 10px #00fff7;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #00e3ae, #00c6ff);
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    .login-box button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 12px #00e3ae;
+    }
+
+    .login-box .links {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .login-box .links a {
+      color: #b8eaff;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 8px;
+      display: inline-block;
+      transition: color 0.2s;
+    }
+
+    .login-box .links a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login to Your Health Space</h2>
+    <form action="/login" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <input type="password" name="password" placeholder="Enter your password" required />
+      <button type="submit">Login</button>
+    </form>
+    <div class="links">
+      <a href="/create-account">Create Account</a><br>
+      <a href="/forgot-password">Forgot Password?</a>
+    </div>
+  </div>
+</body>
+</html>
